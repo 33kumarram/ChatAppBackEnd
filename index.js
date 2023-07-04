@@ -58,26 +58,16 @@ io.on("connection", (socket) => {
     if (!chat.users) return console.log("chat.users not defined");
     chat.users.map((user) => {
       if (user._id == newMessageReceived?.sender?._id) {
-        console.log(
-          "found matching user",
-          user._id,
-          newMessageReceived.sender._id
-        );
       } else {
-        console.log(
-          "sending message  to front end",
-          user._id,
-          newMessageReceived.sender._id
-        );
         socket.in(user._id).emit("message received", newMessageReceived);
       }
     });
-    socket.on("typing", (room) => {
-      socket.in(room).emit("typing");
-    });
-    socket.on("stop typing", (room) => {
-      socket.in(room).emit("stop typing");
-    });
+  });
+  socket.on("typing", (room) => {
+    socket.in(room).emit("typing");
+  });
+  socket.on("stop typing", (room) => {
+    socket.in(room).emit("stop typing");
   });
 });
 
