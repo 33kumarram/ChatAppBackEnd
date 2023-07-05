@@ -13,7 +13,7 @@ var corsOptions = {
     "http://localhost:3000",
     "http://localhost:3001",
     "http://localhost:3002",
-    "https://mernarticleapp.netlify.app",
+    "https://rkchatapp.netlify.app/",
   ],
   credentials: true,
 };
@@ -38,7 +38,7 @@ const io = require("socket.io")(server, {
       "http://localhost:3000",
       "http://localhost:3001",
       "http://localhost:3002",
-      "https://mernarticleapp.netlify.app",
+      "https://rkchatapp.netlify.app/",
     ],
   },
 });
