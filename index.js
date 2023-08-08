@@ -85,6 +85,7 @@ app.use("/messages", messageRoutes);
 app.get("/", (req, res) => {
   res.send("welcome !!!");
 });
+// app.use(express.static("public"));
 
 app.use(notFound);
 
