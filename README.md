@@ -94,32 +94,32 @@ JWT (JSON Web Tokens): Secure authentication method.
 ## Installation
 
 
-To get started with the front-end repository, first clone the repository onto your local machine:
+**To get started with the front-end repository, first clone the repository onto your local machine:**
 
-git clone https://github.com/33kumarram/ChatAppBackEnd.git
+  git clone https://github.com/33kumarram/ChatAppBackEnd.git
 
 
-Next, navigate into the cloned repository and install any dependencies:
+**Next, navigate into the cloned repository and install any dependencies:**
 
-cd ChatAppBackEnd
+  cd ChatAppBackEnd
 
-npm install
+  npm install
 
-You will also need to create a .env file in the root of the project directory, containing the following environment variables: 
+**You will also need to create a .env file in the root of the project directory, containing the following environment variables:** 
 
-MONGODB_URI= your MongoDB connection string
+  MONGODB_URI= your MongoDB connection string
 
-JWT_SECRET=a secret key for JSON Web Token (JWT) encryption
+  JWT_SECRET=a secret key for JSON Web Token (JWT) encryption
 
-APP_URL = Your backend url
+  APP_URL = Your backend url
 
-PORT
+  PORT
 
-Once the dependencies are installed and the environment variables are set, start the development server:
+**Once the dependencies are installed and the environment variables are set, start the development server:**
 
-npm start
+  npm start
 
-The application should now be running on port mentioned by you in env variables.
+**The application should now be running on port mentioned by you in env variables.**
 
 
 
