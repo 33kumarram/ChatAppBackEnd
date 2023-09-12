@@ -107,13 +107,19 @@ npm install
 
 You will also need to create a .env file in the root of the project directory, containing the following environment variables: 
 
-REACT_APP_API_URL = API endpoint to make requests to the server. 
+MONGODB_URI= your MongoDB connection string
+
+JWT_SECRET=a secret key for JSON Web Token (JWT) encryption
+
+APP_URL = Your backend url
+
+PORT
 
 Once the dependencies are installed and the environment variables are set, start the development server:
 
 npm start
 
-The application should now be running on http://localhost:[port].
+The application should now be running on port mentioned by you in env variables.
 
 
 
